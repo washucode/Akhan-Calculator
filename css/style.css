@@ -49,3 +49,13 @@ text-align: center;
    color:white;
    padding-left: 50%;
  }
+
+ @media screen and (max-width:767px) {
+   #arrowDown{
+     font-size: 70px;
+     color:white;
+     padding-left: 50%;
+     padding-top: 10%;
+   }
+
+ }

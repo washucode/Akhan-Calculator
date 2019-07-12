@@ -11,3 +11,11 @@ body{
     font-family: 'Poiret One', cursive;
 
 }
+
+.jumbotron h1,p{
+
+text-align: center;
+ padding-left: 3%;
+
+
+}

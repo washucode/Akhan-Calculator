@@ -43,3 +43,9 @@ text-align: center;
   }
 
  }
+
+ #arrowDown{
+   font-size: 40px;
+   color:white;
+   padding-left: 50%;
+ }

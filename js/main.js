@@ -20,3 +20,6 @@ function calulateAkhan() {
   var day = parseInt(userDateInput.slice(8,10)); //slice date to get day
   var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];//put in an array for ease of access
   var femaleName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];//put in an array for ease of access
+
+  //to calculate exact day of birth
+  var dayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7;

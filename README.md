@@ -6,7 +6,7 @@
 
 Esther Wachuka Ng'aru
 
-## LINK :
+## LINK : https://washucode.github.io/Akhan-Calculator/
 
     
 ## PURPOSE: 

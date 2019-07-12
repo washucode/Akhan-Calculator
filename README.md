@@ -31,6 +31,6 @@ This project is licensed under the MIT License - see the [license.md](license.md
 W3C Schools.
 
 
-## CONTACT
+
 
 Talk to me: estherw8525@gmail.com

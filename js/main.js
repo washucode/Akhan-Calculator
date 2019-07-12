@@ -23,3 +23,23 @@ function calulateAkhan() {
 
   //to calculate exact day of birth
   var dayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7;
+
+  if (gender ==="M"){
+    //checks if gender is male
+    var mName =  maleName[dayofBirth-1];//find out value of gender in index [dayofBirth-1]
+
+    alert("Your Akhan Name is "+ mName);
+
+    document.getElementById("displayName").innerHTML =  "Your Akhan Name is "+ mName;//write value in html element p
+
+  }
+   else {
+     //checks if gender is female
+
+    var fName = femaleName[dayofBirth-1];//find out value of gender in index [dayofBirth-1]
+
+    alert("Your Akhan Name is "+ fName);
+    document.getElementById("displayName").innerHTML = "Your Akhan Name is "+ fName;//write value in html element p
+  }
+
+}

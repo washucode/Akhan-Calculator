@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+body{
+  font-family: 'Poiret One', cursive;
+}
+
 .jumbotron{
-  background-image: url("../images/header1.jpg");
+  background-image: url("../images/header2.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
+    font-family: 'Poiret One', cursive;
 
 }

@@ -64,3 +64,8 @@ text-align: center;
   padding-left: 40%;
   width:70%;
 }
+
+#displayName p{
+  font-size: 40px;
+  color:red;
+}

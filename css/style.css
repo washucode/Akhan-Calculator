@@ -66,6 +66,14 @@ text-align: center;
 }
 
 #displayName p{
+  padding-top:5%;
   font-size: 40px;
 
+}
+
+.container{
+  width:50%;
+}
+.container h2,p{
+  text-align: center;
 }

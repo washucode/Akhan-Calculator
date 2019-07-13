@@ -8,44 +8,44 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1 style ="color:white;">Welcome to Akhan Name calulator</h1>
+      <h1 style ="color:white;">Welcome to Akhan Name calculator</h1>
       <p>This program basically calulates your Akhan age based on a Ghanian tradition to name new borns based
-         on which day of the week they were born.Just add your date of birth and gender and you are good to go.You can check with the reference data table at the bottom of the page.Curious? Get started below..</p>
+         on the day of the week they were born.Just add your date of birth and gender and you are good to go.You can check with the reference data table at the bottom of the page.Curious? Get started below..</p>
          <a href="#form" id= "arrowDown">&#8609;</a>
 
     </div>
 
-       <div class="panel" id= "form">
-         <h1>Enter Your Date & Gender</h1>
-         <form id = "getVariables">
-           <div class="form-group">
-             <label for="InputNumber">Date of Birth:</label>
-             <input type="date" class="form-control" id="inputDate" name ="birthDate">
-           </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
-              <label class="form-check-label" for="Radios1">
-                Female
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
-              <label class="form-check-label" for="Radios2">
-                Male
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
-          </form>
-
+    <div class="panel" id= "form">
+     <h1>Enter Your Date & Gender</h1>
+     <form id = "getVariables">
+       <div class="form-group">
+         <label for="InputNumber">Date of Birth:</label>
+         <input type="date" class="form-control" id="inputDate" name ="birthDate">
        </div>
 
-  <div class="panel">
-    <p id ="displayName"></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
+          <label class="form-check-label" for="Radios1">
+            Female
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
+          <label class="form-check-label" for="Radios2">
+            Male
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
+      </form>
 
-  </div>
+    </div>
 
-  <div class="container">
+    <div class="panel">
+      <p id ="displayName"></p>
+
+    </div>
+
+    <div class="container">
       <h2>Referrence Data</h2>
       <p>This shows data for the days with corresponding Akhan names.</p>
 
@@ -55,9 +55,9 @@
             <th>Day of week</th>
             <th>male Name</th>
             <th>Female Name</th>
-
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td>Sunday</td>
@@ -94,15 +94,12 @@
             <td>Kwame</td>
             <td>Ama</td>
           </tr>
-
-
-
         </tbody>
       </table>
     </div>
 
 
 
-    <script type="text/javascript" src = "js/main.js"></script>
+  <script type="text/javascript" src = "js/main.js"></script>
   </body>
 </html>

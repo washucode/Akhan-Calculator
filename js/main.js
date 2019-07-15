@@ -32,17 +32,17 @@ function calulateAkhan() {
   var dayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7;
   if (dayofBirth < 0){//checks if dayofBirth is negative and converts to positive
     dayofBirth = dayofBirth * -1;
-    alert(dayofBirth);
+
   }
   else if(dayofBirth == 0){
     dayofBirth += 7;//the day of  birth that returns by 0 is Saturday so this avoids printing out a name thats Sunday
-    alert(dayofBirth);
+
   }
 
   else {
     dayofBirth = parseInt((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7);
-    alert(dayofBirth);
-    
+
+
   }
 
 

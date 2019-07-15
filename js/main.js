@@ -3,6 +3,10 @@ function calulateAkhan() {
 
   var userDateInput = document.getElementById("inputDate").value;
 
+   if(userDateInput="yyyy-mm-dd"){
+     alert('Enter Valid Date');
+     return false;
+   }
 
 
   var gender ;

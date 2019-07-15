@@ -1,6 +1,8 @@
 function calulateAkhan() {
   //takes input from the datepicker
-  var userDateInput = document.getElementById("inputDate").value;
+  var userYearInput = document.getElementById("inputYear").value;
+  var userDayInput = document.getElementById("inputDay").value;
+  var userMonthInput = document.getElementById("inputMonth").value;
 
   var gender ;
   //the if statement is to check what radio button is checked.
@@ -14,15 +16,30 @@ function calulateAkhan() {
 
    }
 
-  var century = parseInt(userDateInput.slice(0,2)); //slice date  to get century
-  var year = parseInt(userDateInput.slice(2,4)); //slice date to get year
-  var month = parseInt(userDateInput.slice(5,7)); //slice date to get month
-  var day = parseInt(userDateInput.slice(8,10)); //slice date to get day
+  var century = parseInt(userYearInput.slice(0,2)); //slice date  to get century
+  var year = parseInt(userYearInput.slice(2,4)); //slice date to get year
+  var month = parseInt(userMonthInput); // to get month
+  var day = parseInt(userDayInput); //slice date to get day
   var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];//put in an array for ease of access
   var femaleName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];//put in an array for ease of access
 
   //to calculate exact day of birth
   var dayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7;
+  if (dayofBirth < 0){
+
+    dayofBirth = dayofBirth*-1;
+    alert(dayofBirth);
+  }
+  else if(dayofBirth == 0){
+
+    dayofBirth = 1;
+    alert(dayofBirth);
+  }
+  else {
+    dayofBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))+day) % 7;
+    alert(dayofBirth);
+  }
+
 
   if (gender ==="M"){
     //checks if gender is male

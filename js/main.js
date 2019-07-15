@@ -3,7 +3,7 @@ function calulateAkhan() {
 
   var userDateInput = document.getElementById("inputDate").value;
 
-   if(userDateInput="yyyy-mm-dd"){
+   if(userDateInput==="yyyy-mm-dd"){//checks if nothing has been entered and the user returns the default
      alert('Enter Valid Date');
      return false;
    }
